@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>商户详情</title>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="css/resets.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/shopDetail.css" />
+		<link rel="stylesheet" type="text/css" href="css/bdlist.css" />
+		<script type="text/javascript" src="./js/flexible.js"></script>
+		<script type="text/javascript" data-main="js/shopDetail" src="./js/vendor/require.js"></script>
+	</head>
+	<body>
+		<!--标题部分-->
+		<header class="_header lg">
+			<h2 class="title">
+				<a class="_back" href="javascript:void(0)" lm-back></a>
+				商户详情
+				<a class="_more" lm-click="selectList(e)" lm-target="._fixed"></a>
+			</h2>
+		</header>
+
+		<!--内容部分-->
+		<section class="_con shopDetail" lm-show="!self.bdShow">
+			<section class="mer_msg">
+				<h2 class="mer_name">
+					<span class="name_cn llg" lm-bind="detail.name_cn">
+						*****
+					</span>
+					<br>
+					<p class="name_en md" lm-bind="detail.name_en">
+						*****
+					</p>
+				</h2>
+				<section class="type_date sm">
+					<span class="_type" lm-bind="detail.cate_name_cn">***</span>
+					<span lm-bind="detail.timeStatus">下线时间</span><span class="_date" lm-bind="detail.create_time">*****</span>
+				</section>
+				<p class="mer_dec xs" lm-show="self.detail.description" lm-bind="detail.description">
+					
+				</p>
+				<p  class="mer_dec xs" lm-show="!self.detail.description">
+					经营详细说明未填写
+				</p>
+				<span class="_state md" lm-bind="detail.status">
+					*****
+				</span>
+			</section>
+
+			<ul class="mer_contacts mer_list sm" lm-show="self.detail.promoterShow">
+				<li data-change-per-btn class="btn sm">更换联络人</li>
+				<li class="contact_per">
+					联络人
+					<span class="g_right" data-contact-name></span>
+				</li>
+				<li class="contact_tel">
+					联络电话
+					<span class="g_right"><span lm-bind="detail.proman.mobile"></span><a lm-bHref="detail.proman.callMobile" href="tel:" class="_tel"></a></span>
+				</li>
+				<li class="contact_email">
+					邮箱
+					<span class="g_right email-content" lm-bind="detail.proman.email"></span>
+				</li>
+			</ul>
+
+			<ul class="area_add mer_list">
+				<li class="_area sm">
+					<span class="_gray">所在地区</span>
+					<span class="g_right">
+						<span class="_country" lm-bind="detail.business_area[0].name_cn">泰国</span>·
+						<span class="_city" lm-bind="detail.business_area[1].name_cn">普吉</span>
+						<span class="_area" lm-bind="detail.business_area[2].name_cn">卡塔海滩</span>
+					</span>
+				</li>
+			</ul>
+			<ul class="mer_addr mer_list sm">
+				<li class="add">
+					<span class="_addr sm">详细地址</span>
+					
+					<span class="_mark g_right jump-set-map"></span>
+				</li>
+				<li class="addr_CN">
+					<span class="" lm-show="self.detail.address_cn" lm-bind="detail.address_cn" lm-show="self.detail.address_cn">
+						**********
+					</span>
+					<span class="" lm-show="!self.detail.address_cn">
+						详细地址(中文)-未填写
+					</span>
+				</li>
+				<li class="addr_EN">
+					<span class="" lm-bind="detail.address_en">
+							**********
+					</span>
+					<span class="" lm-show="!self.detail.address_en">
+						详细地址(中文)-未填写
+					</span>
+				</li>
+			</ul>
+			<div  lm-repeat="detail.promoter" lm-repeat-tpl="detailProsList" lm-repeat-target="detailProsScript">
+			</div>
+				
+
+			<ul class="mer_phot mer_list">
+				<li class="_area sm">
+					<span class="_gray">商户照片</span>
+					<span class="_gray"  lm-show="!self.detail.imgShow" style="float: right;">暂无照片&nbsp&nbsp&nbsp&nbsp</span>
+				</li>
+				<li class="_img" lm-show="self.detail.imgShow">
+					<nobr lm-repeat="detail.business_img" lm-repeat-tpl="detailPicList" lm-repeat-target="detailPicScript">
+					</nobr>
+				</li>
+			</ul>
+			<ul class="mer_note mer_list">
+				<li class="_text xs" style="padding:.3rem;line-height:1.2;text-indent:0" data-remark>
+					暂未填写
+				</li>
+			</ul>
+			<button class="add_per lg" lm-click="jumpAdd(e)">
+				<span class="_icon"></span>
+				<span>添加地推员</span>
+			</button>
+		</section>
+		<!--末尾部分-->
+		<!--fixed部分-->
+		<section class="_fixed">
+			<section class="add_list sm">
+				<a lm-bHref="editUrl" javascript:void(0);>修改商户信息</a>
+				<a href="javascript:void(0);" class="" lm-click="line(e)" data-type>上线该商户</a>
+			</section>
+		</section>
+		<div class="fiximg">
+			<img data-big-img src="" />
+		</div>
+		<section class="add-bd _con bdlist" lm-show="self.bdShow">
+			<h3 class="con_title">
+				请先选择需要找的上线的地推员，至少选择1人
+			</h3>
+			<ul class="per_list" lm-repeat="bdList" lm-repeat-tpl="bdList" lm-repeat-target="bdScript">
+				<li class="per index _active">
+					<h3 class="_title">
+						<span class="per_name">王小明(wangxiaoming)</span>
+						<span class="g_right state1">已下线</span>
+					</h3>
+					<section class="per_msg">
+						<p class="date">
+							2014年 04月 15日加入
+						</p>
+						<p class="tel">
+							<span class="phone">137 1234 1234</span>
+							<a class="g_right" href="tel:13712341234"><img src="images/ic_03.png"></a>
+						</p>
+					</section>
+				</li>
+				<li class="per">
+					<h3 class="_title">
+						<span class="per_name">李大黑</span>
+						<span class="g_right state1">已下线</span>
+					</h3>
+					<section class="per_msg">
+						<p class="date">
+							2014年 04月 15日加入
+						</p>
+						<p class="tel">
+							<span class="phone">137 1234 1234</span>
+							<a class="g_right" href="tel:13712341234"><img src="images/ic_03.png"></a>
+						</p>
+					</section>
+				</li>
+				<li class="per">
+					<h3 class="_title">
+						<span class="per_name">张三四</span>
+						<span class="g_right state1">已下线</span>
+					</h3>
+					<section class="per_msg">
+						<p class="date">
+							2014年 04月 15日加入
+						</p>
+						<p class="tel">
+							<span class="phone">137 1234 1234</span>
+							<a class="g_right" href="tel:13712341234"><img src="images/ic_03.png"></a>
+						</p>
+					</section>
+				</li>
+				<li class="per">
+					<h3 class="_title">
+						<span class="per_name">Richman</span>
+						<span class="g_right state1">已下线</span>
+					</h3>
+					<section class="per_msg">
+						<p class="date">
+							2014年 04月 15日加入
+						</p>
+						<p class="tel">
+							<span class="phone">137 1234 1234</span>
+							<a class="g_right" href="tel:13712341234"><img src="images/ic_03.png"></a>
+						</p>
+					</section>
+				</li>
+			</ul>
+			<button class="_phot" lm-click="comfire(e)">确定</button>
+		</section>
+
+
+		<div class="lm-modal-bg none" id="infoModal">
+			<div class="lm-modal-container">
+				<div class="lm-modal-row">
+					<div class="lm-modal-main">
+						<div class="lm-modal-header">
+							<p class="info-header">管理员已收到申请</p>
+						</div>
+						<section class="lm-modal-body">
+							<div class="info-body">
+								<p>商户信息不完整，请先完善商户信息</p>
+								
+							</div>
+						</section>
+						<div class="lm-modal-footer">
+							<button class="footer-btn" lm-modal-miss="#infoModal" style="border-right:solid 1px #e1e1e1;" >取消</button>
+							<button class="footer-btn" lm-click="jumpEdit(e)">完善信息</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		 <div class="lm-modal-bg none" id="addModal">
+			<div class="lm-modal-container">
+				<div class="lm-modal-row">
+					<div class="lm-modal-main">
+						<div class="lm-modal-header">
+							<p class="info-header">管理员已收到申请</p>
+						</div>
+						<section class="lm-modal-body">
+							<div class="info-body">
+								<p>暂无地推员，请先添加地推员</p>
+							</div>
+						</section>
+						<div class="lm-modal-footer">
+							<button class="footer-btn" lm-modal-miss="#addModal">取消</button>
+							<button class="footer-btn" lm-click="jumpAdd(e)">添加地推员</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

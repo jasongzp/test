@@ -1,0 +1,137 @@
+@import "reset.less";
+html{
+	height: 100%;
+	background:#f4f4f4;
+}
+//header部分
+._header{
+	h2.title{
+		a._note{
+			top:(1.28-0.613)/2rem;
+			line-height:0.613rem;
+			height:0.613rem;
+			position:absolute;
+			right:0.4rem;
+			color:@stylecolor;
+			background:#fff;
+			border-radius:3px;
+			padding:0 0.213rem;
+		}
+	}
+	.header_con{
+		height:1.4rem;
+		line-height:1.4rem;
+		.g_flex;
+		.mer,.per{
+			width:100%;
+			text-align: center;
+			a{ 
+				display:inline-block;
+				color:#9eb2e4;
+				position: relative;
+				border-bottom:0.053rem solid @stylecolor;
+				transform:translate(0,-0.053rem);
+				-webkit-transform:translate(0,-0.053rem);
+				-o-transform:translate(0,-0.053rem);
+				-moz-transform:translate(0,-0.053rem);
+
+			}
+			a._border{
+				border-bottom:0.053rem solid #fff;
+				color:#fff;
+			}
+		}
+		.news{
+				&:after{
+					content: "";
+					display:block;
+					position:absolute;
+					background:#ee453b;
+					top:0.3rem;
+					right:-0.2rem;
+					width:0.213rem;
+					height:0.213rem;
+					border-radius: 1rem;
+				}
+			}
+	}
+}
+//footer部分
+
+//flex部分
+
+//内容部分
+._con{
+	.list_con{
+		background:#f4f4f4;
+		padding:0.3rem;
+		.tag_con{
+			display:none;
+		}
+		._active{
+			display:block;
+		}
+		.per_list1,.per_list2{
+			list-style:none;
+			color:#373737;
+			li.per{
+				position:relative;
+				padding:0.4rem;
+				border-radius: 2px;
+				background:#fff;
+				margin-bottom:0.4rem;
+				box-shadow: 0 0 5px #c8c8c8;
+				-webkit-box-shadow: 0 0 5px #c8c8c8;
+				._title{
+					padding-bottom:.35rem;
+					margin-bottom:.35rem;
+					border-bottom:1px solid #d0d0d0;
+					.state1{
+						color:#ee453b;
+					}
+					.state2{
+						color:#3c64c8;
+					}
+					.state3{
+						color:#7d7d7d;
+					}
+					._ex{
+						color:#7d7d7d !important;
+						margin-top:0.2666rem;
+						._CNY{
+							float:right;
+						}
+					}
+				}
+				.per_msg{
+					.date{
+						color:#7d7d7d;
+						margin-bottom:.42rem;
+					}
+					.tel{
+						.phone{
+						}
+						.g_right{
+							margin-top:0.1rem;
+							width:0.373rem;
+							height:0.373rem;
+							background:url("../images/ic_03.png") no-repeat;
+							background-size:100% 100%;
+						}
+					}
+				}
+			}
+		}
+		.per_list2 ._ex{
+			color:#7d7d7d !important;
+			margin-top:0.3rem;
+			._state{
+				float:right;
+				padding:.1rem .25rem;
+				background:#ee453b;
+				color:#fff;
+				border-radius: 100rem
+			}
+		}
+	}
+}

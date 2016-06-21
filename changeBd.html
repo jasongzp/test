@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>更换联络人</title>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="css/resets.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/bdlist.css" />
+		<script type="text/javascript" src="./js/flexible.js"></script>
+		<script type="text/javascript" data-main="js/changeBd" src="./js/vendor/require.js"></script>
+		<style type="text/css">
+			.bdlist._con .per_list .per{
+				margin : 0 auto;
+				margin-bottom :0.4rem;
+			}
+			.bdlist._con .per_list .per .before{
+				display : none;
+			}
+		</style>
+	</head>
+	<body>
+		<!--标题部分-->
+		<header class="_header lg">
+			<h2 class="title">
+				<a class="_back" href="javascript:void(0)" lm-back></a>
+				选择地推员
+			</h2>
+		</header>
+
+		<!--内容部分-->
+		<section class="bdlist _con">
+			<h3 class="con_title md">
+				请选择联络人
+			</h3>
+			<ul class="per_list" lm-repeat="bdList" lm-repeat-tpl="bdList" lm-repeat-target="bdScript">
+				
+			</ul>
+			<button data-submit class="_phot lg">确定</button>
+		</section>
+		<!--末尾部分-->
+		<!--fixed部分-->
+	</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>编辑商户信息</title>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta http-equiv="Expires" content="0">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<link rel="stylesheet" type="text/css" href="css/resets.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/addShop.css" />
+		<script type="text/javascript" src="./js/flexible.js"></script>
+		<script type="text/javascript" data-main="js/addShop" src="./js/vendor/require.js"></script>
+	</head>
+	<body>
+		<!--标题部分-->
+		<header class="_header _fixed lg">
+			<h2 class="title">
+				<a class="_back" href="javascript:void(0)" lm-back></a>
+				编辑商户信息
+				<span class="_save no_save sm" lm-click="save(e)" lm-target="addShop">保存</span>
+			</h2>
+		</header>
+
+		<!--内容部分-->
+		<section class="add-shop sm _con lm-js-addShop">
+			<h3 class="title">
+				<span class="_required _tit">中英文商户至少输入一项</span>
+			</h3>
+			<form id="addForm">
+				<ul class="mer_name mer_list">
+					<li class="">
+						商户中文名称
+						<input contenteditable="false"  name="name_cn" class="_CN sm" type="text" placeholder="请输入商户中文名称" lm-validate="addShop" lm-bValue="shopList.name_cn" lm-blur="blur(e)"></input>
+					</li>
+					<li>
+						商户英文名称
+						<input name="name_en" class="_CN sm" type="text" placeholder="请输入商户英文名称" lm-validate="addShop" lm-bValue="shopList.name_en" lm-blur="blur(e)"></input>
+					</li>
+				</ul>
+				<ul class="mer_add mer_list" lm-click="areaListRender(e)">
+					<a href="javascript:void(0);" class="_link">
+						所在地区 
+						<span class="chose_city g_right lm-js-setArea" lm-bind="areaStr" data-area>
+							 请选择 
+						</span>
+						<input lm-bValue="shopList.business_area_id" name="area_id" type="hidden" id="lm-js-set" />
+					</a>
+				</ul>
+				<h3 class="title title2">
+					<span class="_tit"><span style="display:none;color: red;font-size: 1.6rem;vertical-align: middle;">*</span>&nbsp中英文地址至少输入一项</span>
+				</h3>
+				<ul class="mer_add mer_list">
+					<li>
+						<input class="_CN _full sm" name="address_cn" type="text" placeholder="请输入详细地址(中文)" lm-bValue="shopList.address_cn" lm-blur="blur(e)"/>
+					</li>
+					<li>
+						<input class="_EN _full sm" name="address_en" type="text" placeholder="请输入详细地址(英文)" lm-bValue="shopList.address_en" lm-blur="blur(e)"/>
+					</li>
+					<li class="_link" lm-click='mapRender(e)'>
+						在地图上标记 
+						<span class="mark_map g_right">
+							<img class="_ic1" src="images/d_03.png" />
+							<span class="_text lm-js-mapName" lm-bind="shopList.name_cn"> 滑动地图选择</span>
+						</span>
+						<input name="lat" type="hidden" id="lm-js-lat" lm-bValue="shopList.lat"/>
+						<input name="lng" type="hidden" id="lm-js-lng" lm-bValue="shopList.lng" />
+					</li>
+				</ul>
+				<ul class="mer_sub mer_list" >
+						<li  class="_link" lm-click="cateListRender(e)">
+							经营类目 
+							<span class="chose_city g_right lm-js-setCate" data-subj lm-bind="shopList.cate_name_cn">
+								 请选择 
+							</span>
+							<input name="cate_id" type="hidden" id="lm-js-cate" lm-bValue="shopList.cate_id" />
+						</li>
+					<li style="height:2.5rem;">
+						<textarea rows="3" class="text_add sm" style="margin-top:.5rem;width:9rem;" placeholder="经营类目说明" name="description" lm-bind="shopList.description" lm-blur="blur(e)"></textarea >
+					</li>
+				</ul>
+				
+				<ul class="mer_img mer_list">
+					<li>
+						商户照片 
+					</li>
+					<li style="height:3rem;line-height:1;">
+						<section class="_wrap">
+							<nobr style="display:inline-block;height:2.5rem;font-size:0;text-indent:0">
+							<div class="lm-js-container" style="display:inline-block;vertical-align:top;">
+							</div>
+								
+							<section class="add_img">
+								<input id="upd_files2" name="imageFile" type="file" accept="image/*" multiple=true lm-target=".lm-js-container"/>
+							</section>
+							</nobr>
+						</section>
+					</li>
+				</ul>
+				<ul class="mer_note mer_list sm">
+					<li style="height:1.5rem;padding:.5rem 0;">
+						<textarea style="width:9rem;" rows="3" class="text_add sm" placeholder="备注" name="remark" lm-bind="shopList.remark" lm-blur="blur(e)"></textarea >
+					</li>
+				</ul>
+			</form>
+			<a href="javascript:void(0);" class="_phot no_save lg" lm-target="addShop" lm-click="save">保存</a>
+		</section>
+		<!--内容部分-->
+		
+		<div class="lm-modal-bg none" id="load">
+			<div class="lm-modal-container">
+				<div class="lm-modal-row">
+					<div class="lm-modal-main" style="background:none;">
+						<img src="./images/loading.gif" style="margin:0 auto; width: 54px;">
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>

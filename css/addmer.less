@@ -1,0 +1,165 @@
+@import "reset.less";
+//header部分
+//footer部分
+//fixed部分
+//con部分
+.add-shop._con{
+	margin-top:16%;
+	color:@color_gray;
+	.sm;
+	.mer_list{
+		margin-top:4%;
+		background: #fff;
+		.g_box_shadow(0 2px 5px #ccc);
+		input,textarea{
+			.sm;
+		}
+		li,._link{
+			.sm;
+			position:relative;
+			padding:4% 5% 4% 5%;
+			border-bottom: 1px solid #dfdfdf;
+			.g_clear;
+			span.g_right{
+				color:@color_black;
+				._ic1{
+					display:inline-block;
+					width:auto;
+					height:1.4rem;
+					vertical-align: middle;
+				}
+				._upd,._del{
+					padding:5% 10%;
+					display:inline-block;
+					.xs;
+					border-radius:3px;
+				}
+				._upd{
+					color:@stylecolor;
+					border:1px solid #3c64c8;
+				}
+				._del{
+					color:red;
+					border:1px solid red;
+				}
+			}
+			input{
+				margin-left: 3%;
+			}
+			.add_img{
+				width:8rem;
+				height: 8rem;
+				background:url("../images/add_03.png") no-repeat center,#f4f4f4;
+				background-size:30%;
+				#upd_files2{
+					position: absolute;
+					display:inline-block;
+					top:0;
+					left:0;
+					width:8rem;
+					height:8rem;
+					font-size:0;
+					opacity: 0;
+				}
+			}
+		}
+		._required{
+			&:before{
+				content: "*";
+				color:red;
+				position:absolute;
+				font-size:1.6rem;
+				left:2%;
+			}
+		}
+	}
+	.mer_img li{
+		position:relative;
+		overflow: auto;
+		._wrap{
+			width:100%;
+			height: 8rem;
+		}
+		span.g_right{
+			margin-right: 5%;
+			#upd_files{
+				position: absolute;
+				display:inline-block;
+				right:21%;
+				width:4.3rem;
+				height:2.3rem;
+				font-size:0;
+				opacity: 0;
+			}
+		}
+		.upd_img,.add_img{
+			display:inline-block;
+			position:relative;
+			margin-right: 3%;
+			width:8rem;
+		}
+		.upd_img{
+			width:8rem;
+			height: 8rem;
+			background:url("../images/pp_03.png") no-repeat;
+			background-size: 100% 100%;
+		}
+		._close{
+			&:after{
+				content: "";
+				position:absolute;
+				top:-7%;
+				right: -7%;
+				width:2rem;
+				height:2rem;
+				border-radius:1rem;
+				background:url("../images/c_03.png") no-repeat center,rgba(221,80,61,.7);
+				background-size:50% 50%;
+			}
+		}
+	}
+	.mer_per{
+		li._title{
+			position: relative;
+			span.g_right{
+				position:absolute;
+				right:1.2rem;
+				color:#3c64c8;
+				border:1px solid #3c64c8;
+				padding:1.5% 3%;
+				.xs;
+				border-radius: 3px;
+				top:1rem;
+			}
+		}
+		.per{
+			padding-left:9%;
+			background:url("../images/ic_11.png") no-repeat 3.5% center;
+			background-size: auto 38%;
+			.per_date{
+				color:#7d7d7d;
+				margin-left: 2%;
+			}
+			span.g_right{
+				img{
+					height:1em;
+					width:auto;
+				}
+			}
+		}
+		.index{
+			position:relative;
+			&:before{
+				content: "";
+				display:block;
+				width:3.5%;
+				height:28%;
+				position:absolute;
+				top:8%;
+				left:1%;
+				background:url("../images/icc_07.png") no-repeat;
+				background-size: 100% 100%;
+			}
+		}
+	}
+}

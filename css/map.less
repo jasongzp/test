@@ -1,0 +1,81 @@
+@import "reset.less";
+//header部分
+//footer部分
+//fixed部分
+//con部分
+.map._con{
+	color:#000;
+	position:fixed;
+	height:100%;
+	width:100%;
+	background:#123456;
+	.map_con{
+		height:100%;
+	}
+	._curPositon{
+		position:absolute;
+		width:3rem;
+		height:3rem;
+		border-radius: 3px;
+		box-shadow: 0 0 5px #c5c2bc;
+		-webkit-box-shadow: 0 0 5px #c5c2bc;
+		background:url("../images/local_03.png") no-repeat center,#fff;
+		background-size: 70% 70%;
+		bottom:10%;
+		right:2%;
+		z-index:999999999;
+	}
+	.search_mer{
+		border:1px solid #d0d0d0;
+		box-shadow: 0 2px 2px #d0d0d0;
+		position:fixed!important;
+		background:url("../images/w_07.png") no-repeat 3% center,#fff;
+		background-size: auto 50%;
+		top:55px!important;
+		left:4%!important;
+		width:80%;
+		padding-left: 10%;
+		border-radius: 5px;
+		z-index:999999999!important;
+		line-height: 30px;
+		height:30px;
+	}
+	.mer_list{
+		background:#fff;
+		font-size: 1.4rem;
+		color:#373737;
+		div,input{
+			border-bottom:1px solid #e5e5e5;
+			padding:4% 3%;
+		}
+		div{
+			border:none;
+		}
+		input{
+			width:100%;
+		}
+		._tit{
+			._mark{
+				display:inline-block;
+				width:100%;
+				background:none;
+			}
+			._mark,._save{
+				color:#3c64c8;
+			}
+			._cance,._save{
+				padding:0.3rem 1rem;
+				border:1px solid #373737;
+				margin-left: 1rem;
+				border-radius: 3px;
+			}
+			._save{
+				border:1px solid #3c64c8;
+			}
+
+		}
+	}
+	.gmnoprint{
+		opacity: 0;
+	}
+}

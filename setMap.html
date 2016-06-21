@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>添加商户</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="css/resets.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/map.css" />
+		<script type="text/javascript" data-main="js/setMap" src="./js/vendor/require.js"></script>
+	</head>
+	<body>
+		<!--标题部分-->
+		<header class="addShop _header _fixed" >
+			<h2 class="title" style="height:40px;line-height:40px;">
+				<a class="_back" href="javascript:void(0)" style="height:20px;width:10px;margin-top:5px;" lm-back></a>
+				编辑商户信息
+			</h2>
+		</header>
+
+		<!-- 地图 -->
+		<section class="map _con lm-js-mapShow">
+			<input class="search_mer" id="pac-input" placeholder='请输入要查找的商户名称'/>
+			<section class="_curPositon"></section>
+			<div class="map_con" id='map'>
+			</div>
+		</section>
+		<div class="lm-modal-bg" id="load">
+			<div class="lm-modal-container">
+				<div class="lm-modal-row">
+					<div class="lm-modal-main" style="background:none;">
+						<img src="./images/loading.gif" style="margin:0 auto; width: 54px;display:block;">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 地图 -->
+	</body>
+
+	<script async defer
+      src="http://maps.google.cn/maps/api/js?key=AIzaSyA218CKwsRM2j6t00MStA8Qqvh9LIbVbh0&libraries=places">
+    </script>
+</html>

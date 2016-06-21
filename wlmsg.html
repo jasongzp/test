@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>物料申请</title>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="css/resets.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/wlmsg.css" />
+		<script type="text/javascript" src="./js/flexible.js"></script>
+		<script type="text/javascript" data-main="js/wlmsg" src="./js/vendor/require.js"></script>
+	</head>
+	<body>
+		<!--标题部分-->
+		<header class="_header wlmsg lg">
+			<h2 class="title">
+				<a class="_back" href="JavaScript:history.go(-1)"></a>
+				<span>物料申请</span>
+			</h2>
+		</header>
+
+		<!--内容部分-->
+		<section class="_con wlmsg">
+			<ul class="mer_contacts sm">
+				<li class="_title lg">
+					<span class="_text">物料号</span>
+					<span class="g_right _num llg" lm-bind="materiel.qrcode_id">
+						
+					</span>
+					<section class="_border">
+					</section>
+				</li>
+				<li class="contact_per">
+					<span class="_text">申请人</span>
+					<span class="g_right" lm-bind="materiel.pername"></span>
+				</li>
+				<li class="contact_tel">
+					<span class="_text">联系电话</span>
+					<span class="g_right"><span class="_text" lm-bind="materiel.mobile"></span><a href="tel:137 1234 1234" class="_tel"><img src="images/ic_03.png" /></a></span>
+				</li>
+				<li class="contact_email">
+					<span class="_text">邮箱账号</span>
+					<span class="g_right" lm-bind="materiel.email"></span>
+				</li>
+				<li class="contact_mer">
+					<span class="_text">所属商户</span>
+					<span class="g_right" lm-bind="materiel.mer">
+						<span lm-bind="materiel.business_area"></span> <span lm-bind="materiel.business_name"></span>
+					</span>
+				</li>
+				<li class="contact_addr">
+					<span class="_text">详细地址</span>
+					<p class="_addr" lm-bind="materiel.address">
+						
+					</p>
+				</li>
+			</ul>
+			<section class="apply_date xs">
+				<p class="apply_time">
+					申请时间:<span lm-bind="materiel.create_at"></span>
+				</p>
+				<p class="apply_id">
+					申请单号:<span lm-bind="materiel.serial"></span>
+				</p>
+				<span class="_state sm" lm-bind="materiel.status">
+					
+				</span>
+			</section>
+			<div class="textarea-wrap sm js-group-toggle">
+				<textarea class="apply_con sm" rows=3 placeholder="备注信息"></textarea>
+				<span data-remak class="remark_sbumit">确定</span>
+			</div>
+			<section class="btn_group lg js-group-toggle">
+				<a  class="_send" data-send>
+					物料已发放
+				</a>
+				<a  class="_file" data-file-num>
+					申请物料文件
+				</a >
+			</section>
+		</section>
+		<div class="lm-modal-bg none" id="load">
+			<div class="lm-modal-container">
+				<div class="lm-modal-row">
+					<div class="lm-modal-main" style="background:none;">
+						<img src="./images/loading.gif" style="margin:0 auto; width:1rem;display:block">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--末尾部分-->
+	</body>
+</html>

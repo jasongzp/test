@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>物料申请</title>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="css/resets.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/ewm.css" />
+		<script type="text/javascript" src="./js/flexible.js"></script>
+		<script src="js/jquery-2.1.0.js"></script>
+	</head>
+	<body>
+		<!--标题部分-->
+		<header class="_header lg">
+			<h2 class="title">
+				<a class="_back" href="JavaScript:history.back(-1)"></a>
+				<span>物料申请</span>
+			</h2>
+		</header>
+
+		<!--内容部分-->
+		<section class="_con">
+			<section class="_succ">
+				<img class="suc_suc" src="images/suc_03.png">
+				<h3 class="_tit">
+					<span class="llg f-500" style="color:#373737">已发送至你的邮箱!</span>
+					<br>
+					<span class="_mp2 md" style="text-align:center">
+						<span data-num class="wl_id">20</span>份物料文件已发送至你的邮箱,请查收!
+					</span>
+				</h3>
+			</section>
+			<a href="JavaScript:history.back(-1)" class="_phot _saved lg">返回</a>
+		</section>
+		<!--末尾部分-->
+		<!--fixed部分-->
+		<script>
+			$("[data-num]").text(window.location.hash.replace("#",""));
+		</script>
+	</body>
+</html>

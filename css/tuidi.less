@@ -1,0 +1,223 @@
+@import "reset.less";
+//header部分
+._header{
+	padding:3% 0 0;
+	h2.title{
+		font-size:1.8rem;
+		text-align: center;
+		width:100%;
+	}
+	.header_con{
+		margin-top: 8%;
+		.g_flex;
+		.mer,.per{
+			width:100%;
+			text-align: center;
+			a{ 
+				display:inline-block;
+				color:#9eb2e4;
+				font-size:1.4rem;
+				padding:0 3% 6%;
+			}
+			a._border{
+				border-bottom: 0.3rem solid #fff;
+				color:#fff;
+			}
+		}
+	}
+}
+//footer部分
+
+//flex部分
+._fixed{
+	position:absolute;
+	left:0;
+	width:100%;
+	z-index:9999;
+	background:rgba(0,0,0,.4);
+	display:none;
+	.g_clear;
+	.add_list{
+		background:#fff;
+		a{
+			color:#7d7d7d;
+			display:block;
+			font-size:1.4rem;
+			padding:4% 0 4% 14%;
+		}
+		a:first-child{
+			background:url("../images/dd_03.png") no-repeat 3% center;
+			background-size:auto 45%;
+			border-bottom: 1px solid #ccc;
+		}
+		a:last-child{
+			background:url("../images/dd_06.png") no-repeat 3% center;
+			background-size:auto 45%;
+		}
+		box-shadow: 0px 2px 2px #000;
+		-webkit-box-shadow: 0px 2px 8px #000;
+	}
+}
+//内容部分
+._con{
+	width:100%;
+	ul.tag_nav{
+		.g_flex;
+		width:100%;
+		li{
+			width:100%;
+			font-size:1.4rem;
+			background:#d0d0d0;
+			text-align: center;
+			padding:4% 0;
+			position:relative;
+			&:after{
+				content:"";
+				position:absolute;
+				height:50%;
+				display:block;
+				top:25%;
+				left:0px;
+				width:1px;
+				background:#f4f4f4;
+			}
+		}
+		li._index,li._index+li,li:first-child{
+			&:after{
+				content:"";
+				position:absolute;
+				height:60%;
+				display:block;
+				top:20%;
+				left:0px;
+				width:0px;
+				background:#fff;
+			}
+		}
+		li._index{
+			background:#f4f4f4;
+			color:#000;
+			border-right:none;
+		}
+	}
+	.list_con{
+		background:#f4f4f4;
+		padding:3%;
+		section.search_wrap{
+			form{
+				width:100%;
+			}
+			width:100%;
+			position:relative;
+			#_search{
+				background:transparent;
+				padding:1.5% 0 1.5% 9%;
+				width:100%;
+				font-size: 1.3rem;
+				border:1px solid #d0d0d0;
+				border-radius:6px;
+			}
+			label{
+				position:absolute;
+				top:25%;
+				left:2%;
+				width:4%;
+			}
+			.closeImg{
+				position:absolute;
+				top:20%;
+				right:20%;
+				width:5%;
+				display:none;
+			}
+			.closeText{
+				position:absolute;
+				top:15%;
+				right:2%;
+				color:#7d7d7d;
+				font-size:1.3rem;
+				display:none;
+			}
+
+		}
+		section.list_wrap{
+			a._list{
+				display:block;
+				box-shadow: 0 0 5px #ccc;
+				-webkit-box-shadow: 0 0 5px #ccc;
+				border-radius:2px;
+				margin-top: 5%;
+				background:#fff;
+				color:#373737;
+				padding:4% 3% 1%;
+				h3{
+					margin-bottom: 3%;
+					color:#7d7d7d;
+				}
+				h3._title{
+					font-size:1.5rem;
+					padding-bottom: 4%;
+					border-bottom: 1px solid #d0d0d0;
+					span._name{
+						color:#000;
+					}
+					span._state1{
+						float:right;
+						color:#3c64c8;
+					}
+					span._state2{
+						float:right;
+						color:#ee453b;
+					}
+					span._state3{
+						float:right;
+						color:#7d7d7d;
+					}
+
+				}
+				h3._time{
+					span{
+						margin:0 1%;
+					}
+					span:first-child{
+						margin-left: 0;
+					}
+				}
+				h3._add{
+					vertical-align: top;
+					span.add_msg{
+						color:#000;
+						margin-left: 1%;
+					}
+				}		
+			}
+
+		}
+	}
+	>section._none{
+		color:#ccc;
+		font-size:1.5rem;
+		width:100%;
+		text-align: center;
+		position:fixed;
+		top:35%;
+	}
+	>section.a_wrap{
+		text-align: center;
+		a.add_mer{
+			line-height: 1;
+			position:fixed;
+			top:50%;
+			left:26.5%;
+			background:url("../images/ddd_03.png") no-repeat 20% center,#3c64c8;
+			background-size:auto 45%;
+			width:30%;
+			padding:4% 5% 4% 12%;
+			font-size:1.7rem;
+			border-radius:3px;
+			box-shadow: 0 0 5px #ccc;
+			-webkit-box-shadow: 0 0 5px #ccc;
+		}
+	}
+	
+}

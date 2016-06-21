@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>二维码信息</title>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="css/resets.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/qcodeblock.css" />
+		<script type="text/javascript" src="./js/flexible.js"></script>
+		<script type="text/javascript" data-main="js/qcodesucc" src="./js/vendor/require.js"></script>
+	</head>
+	<body>
+		<!--标题部分-->
+		<header class="_header qcodeblock lg">
+			<h2 class="title">
+				<a class="_back" href="JavaScript:history.go(-1)"></a>
+				二维码信息
+			</h2>
+		</header>
+
+		<!--内容部分-->
+		<section class="_con qcodeblock">
+			<section class="_title">
+				<p class="_text md">编号</p>
+				<p class="_num llg" lm-bind="qrcode.qrcode_id">000000</p>
+				<span class="login_name md">尚未占用</span>
+			</section>
+			<a href="javascript:void(0)" class="js-href _phot logout _mg1 lg">添加地推员</a>
+		</section>
+		<!--末尾部分-->
+		<!--fixed部分-->
+	</body>
+</html>

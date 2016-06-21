@@ -1,0 +1,278 @@
+@import "reset.less";
+//header部分
+._header{
+	padding:3% 0 3%;
+	width:100%;
+	h2.title{
+		font-size:1.6rem;
+		text-align: center;
+		width:100%;
+	}
+}
+//footer部分
+//fixed部分
+//con部分
+._con{
+	color:#373737;
+	>section.mer_msg{
+		padding:5% 3% 2%;
+		background:#f4f4f4;
+		position:relative;
+		h2.mer_name{
+			font-size:1.8rem;
+			span.name_en{
+				font-size:1.5rem;
+			}
+		}
+		>.type_date{
+			color:#7d7d7d;
+			margin:3% 0;
+			font-size:1.2rem;
+			._type{
+				color:#fff;
+				background:#373737;
+				border-radius: 1.2rem;
+				margin-right: 1%;
+				padding:0.5% 2.5%;
+			}
+			._date{
+				margin:0 1%;
+			}
+		}
+		>.mer_dec{
+			color:#7d7d7d;
+			line-height: 1.6;
+		}
+		>._state{
+			position:absolute;
+			color:#7d7d7d;
+			right:3%;
+			font-size: 1.4rem;
+			top:14%;
+		}
+		>._online{
+			color:#3c64c8;
+		}
+		>._downline{
+			color:#ee453b;
+		}
+	}
+	>ul.area_add,>.mer_phot,>ul.mer_contacts,ul.mer_per,>ul.mer_addr,>ul.mer_note{
+		background:#fff;
+		font-size:1.4rem;
+		margin-top: 3%;
+		li{
+			padding:4% 3%;
+			position:relative;
+			border-bottom: 1px solid #e5e5e5;
+			span._gray,span._addr{
+				color:#7d7d7d;
+			}
+			span._mark{
+				position:absolute;
+				height:100%;
+				top:0;
+				right:0;
+				width:14%;
+				border-left: 1px solid #e5e5e5;
+				background:url("../images/m_03.png") no-repeat center;
+				background-size:28% auto;
+			}
+			span.no_mark{
+				position:absolute;
+				height:100%;
+				top:0;
+				right:0;
+				width:14%;
+				border-left: 1px solid #e5e5e5;
+				background:url("../images/d_03.png") no-repeat center;
+				background-size:28% auto;
+			}
+		}
+		li._img{
+			overflow:auto;
+			img{
+				width:30%;
+				display:inline-block;
+				margin-right: 1%;
+			}
+		}
+	}
+	>ul.mer_note{
+		li{border-bottom:none; }
+		padding-bottom: 5%;
+	}
+	>ul.mer_contacts{
+		color:#7d7d7d;
+		li{
+			border:none;
+		}
+		span.g_right{
+			color:#373737;
+			line-height: 1;
+			a._tel{
+				vertical-align: middle;
+				padding-left: 0.8rem;
+				img{
+					height:1.1em;
+					width:1.1em;
+				}
+			}
+		}
+	}
+	ul.mer_per{
+		li._title{
+			span.g_right{
+				color:#3c64c8;
+			}
+		}
+		li.per{
+			line-height: 1;
+			padding-left:9%;
+			background:url("../images/ic_11.png") no-repeat 3.5% center;
+			background-size: auto 38%;
+			span.per_date{
+				color:#7d7d7d;
+				margin-left: 2%;
+			}
+			span.g_right{
+				a.more{
+					vertical-align: middle;
+					width:0.5em;
+				}
+			}
+		}
+		li.index{
+			position:relative;
+			&:before{
+				content: "";
+				display:block;
+				width:3.5%;
+				height:28%;
+				position:absolute;
+				top:8%;
+				left:1%;
+				background:url("../images/icc_07.png") no-repeat;
+				background-size: 100% 100%;
+			}
+		}
+	}
+	>button.add_per{
+		line-height: 1;
+		border:none;
+		display: block;
+		margin:4% auto;
+		width:90%;
+		padding:4% 0 4% 10%;
+		color:#fff;
+		box-shadow: 0 0 3px #3c64c8;
+		-webkit-box-shadow: 0 0 3px #3c64c8;
+		border-radius:3px;
+		font-size:1.7rem;
+		background:url("../images/t_03.png") no-repeat 35% center,#3c64c8;
+		background-size:auto 40%;
+	}
+	>button.no_add_per{
+		line-height: 1;
+		border:none;
+		display: block;
+		margin:4% auto;
+		width:90%;
+		padding:4% 0 4% 10%;
+		color:#3c64c8;
+		box-shadow: 0 0 3px #3c64c8;
+		-webkit-box-shadow: 0 0 3px #3c64c8;
+		border-radius:3px;
+		font-size:1.7rem;
+		background:url("../images/wx_03.png") no-repeat 35% center,#7793d9;
+		background-size:auto 40%;
+	}
+}
+
+
+
+
+._fixed{
+	position:absolute;
+	left:0;
+	width:100%;
+	z-index:9999;
+	background:rgba(0,0,0,.4);
+	display:none;
+	.g_clear;
+	.add_list{
+		background:#fff;
+		a{
+			color:#7d7d7d;
+			display:block;
+			font-size:1.4rem;
+			padding:4% 0 4% 10%;
+		}
+		a:first-child{
+			background:url("../images/fx_03.png") no-repeat 4% center;
+			background-size:auto 45%;
+			border-bottom: 1px solid #ccc;
+		}
+		a:last-child{
+			background:url("../images/fx_07.png") no-repeat 4% center;
+			background-size:auto 45%;
+		}
+		box-shadow: 0px 2px 2px #000;
+		-webkit-box-shadow: 0px 2px 8px #000;
+	}
+}
+
+
+/* 
+	龙门客栈模态框
+ */
+.lm-modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+.lm-modal-container {
+  display: table;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+.lm-modal-row {
+  display: table-cell;
+  vertical-align: middle;
+}
+.lm-modal-main {
+  width: 90%;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 3px;
+}
+.lm-modal-header {
+  text-align: center;
+  font-size: 18px;
+}
+.lm-modal-body {
+  text-align: center;
+  color: #373737;
+}
+.lm-modal-footer {
+  padding: 20px;
+}
+.footer-btn{
+	background-color: #4D90FE;
+	color: #fff;
+	width: 100%;
+	height: 30px;
+	border-radius: 5px;
+	outline: none;
+    border-style: hidden;
+}
+
+
+.none{
+	display: none!important;
+}

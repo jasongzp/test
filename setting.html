@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>更多</title>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="css/resets.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/setting.css" />
+		<script type="text/javascript" src="./js/flexible.js"></script>
+		<script type="text/javascript" data-main="js/setting.js" src="./js/vendor/require.js"></script>
+	</head>
+	<body>
+		<!--标题部分-->
+		<header class="_header setting">
+			<h2 class="title lg">
+				<a class="_back" href="javascript:void(0)" lm-back></a>
+				<span>更多</span>
+			</h2>
+		</header>
+
+		<!--内容部分-->
+		<section class="_con setting">
+			<section class="_title">
+				<img class="login_tx" src="images/login_03.png"/>
+				<span class="login_name lg js-data-username" lm-bind="userinfo.name">***</span>
+			</section>
+			<ul class="list_wrap">
+				<a href="settingInfo.html" class="_list _link sm">
+					<span class="_text">
+						个人信息
+					</span>
+				</a>
+				<a href="qrcodeall.html" class="_list _link sm">
+					<span class="_text">
+						查看全部物料
+					</span>
+				</a>
+				<a href="area.html" class="_list  _link sm">
+					<span class="_text">
+						切换城市
+					</span>
+					<span class="city_name" lm-bind="userinfo.area[1].name_cn"></span>
+				</a>
+				<a href="settingLang.html" class="_list  _link sm">
+					<span class="_text">
+						语言
+					</span>
+					<section class='g_right lag'>
+						<span class='_text'>中文</span>
+						<img src="images/lagu_03.png" />
+					</section>
+				</a>
+			</ul>
+			<button class="logout lg js-data-logout">退出</button>
+			
+		</section>
+		<!--末尾部分-->
+		<!--fixed部分-->
+	</body>
+</html>

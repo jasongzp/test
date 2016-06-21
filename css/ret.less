@@ -1,0 +1,166 @@
+@import "reset.less";
+//header部分
+._header{
+	padding:3% 0 0;
+	h2.title{
+		font-size:1.8rem;
+		text-align: center;
+		width:100%;
+	}
+	.header_con{
+		margin-top: 8%;
+		.g_flex;
+		.mer,.per{
+			width:100%;
+			text-align: center;
+			a{ 
+				display:inline-block;
+				color:#9eb2e4;
+				font-size:1.4rem;
+				padding:0 3% 6%;
+			}
+			a._border{
+				border-bottom: 0.3rem solid #fff;
+				color:#fff;
+			}
+		}
+	}
+}
+//footer部分
+
+//flex部分
+//内容部分
+._con{
+	width:100%;
+	background:#f4f4f4;
+	>.tag_nav{
+		.g_flex;
+		width:100%;
+		border-bottom:1px solid #d0d0d0;
+		li{
+			width:100%;
+			color:#5f5f5f;
+			font-size:1.4rem;
+			text-align: center;
+			background:url("../images/cm2_03.png") no-repeat 90% center;
+			background-size:auto 20%;
+			padding:4% 0;
+			position:relative;
+		}
+		li:first-child{
+			border-right: 1px solid #d0d0d0;
+		}
+	}
+	>.list_wrap{
+		._list{
+			position:relative;
+			background:#fff;
+			margin-top: 4%;
+			padding:2% 5% 2% 2%;
+			.g_flex;
+			border-bottom: 1px solid #d0d0d0;
+			>.g_left{
+				padding-right: 4%;
+				>._index{
+					font-size:1.2rem;
+					display:inline-block;
+					border:1px solid #d0d0d0;
+					color:#373737;
+					border-radius: 100px;
+					padding:1% 12%;
+					margin-top: 1%;
+				}
+				>._num{
+					text-align: right;
+					margin:2% 0;
+					color:#7d7d7d;
+					._parse{
+						color:#3c64c8;
+						font-size:2.6rem;
+					}
+					._point{
+						color:#3c64c8;
+						font-size:1.2rem;
+					}
+					._icon{
+						color:#7d7d7d;
+						font-size: 1.4rem;
+					}
+				}
+				width:35%;
+				border-right: 1px solid #d0d0d0;
+
+			}
+			>.g_right{
+				width:60%;
+				padding-left: 4%;
+				font-size:1.4rem;
+				color:#343434; 
+				line-height:2;
+				._mer{
+					color:#7d7d7d;
+					font-size: 1.2rem;
+				}
+				._tel{
+					._phone{
+						line-height: 1;
+						display:inline-block;
+						width:100%;
+					}
+					._ic{
+						float:right;
+						width:1.2rem;
+						height:1.2rem;
+						background:url("../images/ic_03.png");
+						background-size:100% 100%;
+					}
+				}
+			}
+		}
+	}	
+	._list._top3:nth-child(1){
+		._index{
+			opacity: 0;
+		}
+		&:before{
+			content: "";
+			position:absolute;
+			top:-0.5rem;
+			left:2.5%;
+			width:2.5rem;
+			height:3.2rem;
+			background:url("../images/ret_03.png");
+			background-size:100% 100%;
+		}
+	}
+	._list._top3:nth-child(2){
+		._index{
+			opacity: 0;
+		}
+		&:before{
+			content: "";
+			position:absolute;
+			top:-0.5rem;
+			left:2.5%;
+			width:2.5rem;
+			height:3.2rem;
+			background:url("../images/ret_06.png");
+			background-size:100% 100%;
+		}
+	}
+	._list._top3:nth-child(3){
+		._index{
+			opacity: 0;
+		}
+		&:before{
+			content: "";
+			position:absolute;
+			top:-0.5rem;
+			left:2.5%;
+			width:2.5rem;
+			height:3.2rem;
+			background:url("../images/ret_08.png");
+			background-size:100% 100%;
+		}
+	}
+}

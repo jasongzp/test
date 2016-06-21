@@ -1,0 +1,117 @@
+@import "reset.less";
+//header部分
+._header{
+	padding:3% 0 3%;
+	width:100%;
+	h2.title{
+		font-size:1.6rem;
+		text-align: center;
+		width:100%;
+	}
+}
+//footer部分
+//fixed部分
+//con部分
+._con{
+	color:#373737;
+	>._title{
+		font-size:1.2rem;
+		padding-left: 14.6%;
+		margin:5% 0;
+	}
+	>.per_list{
+
+		li.per{
+			position:relative;
+			padding:4%;
+			border-radius: 3px;
+			width:72%;
+			margin-left:13%;
+			background:#fff;
+			margin-bottom:4%;
+			box-shadow: 0 0 5px #c8c8c8;
+			-webkit-box-shadow: 0 0 5px #c8c8c8;
+			._title{
+				font-size:1.4rem;
+				padding-bottom:4%;
+				margin-bottom:4%;
+				border-bottom:1px solid #d0d0d0;
+				.state1{
+					color:#ee453b;
+				}
+				.state2{
+					color:#3c64c8;
+				}
+				.state3{
+					color:#7d7d7d;
+				}
+			}
+			.per_msg{
+				.date{
+					color:#7d7d7d;
+					font-size:1.2rem;
+					margin-bottom: 4%;
+				}
+				.tel{
+					.phone{
+						font-size:1.4rem;
+					}
+					.g_right{
+						vertical-align: middle;
+						img{
+							width:1.5rem;
+						}
+					}
+				}
+			}
+			&:before{
+				content: "";
+				display:block;
+				position:absolute;
+				width:1.6rem;
+				height:1.6rem;
+				border-radius: 2rem;
+				border:2px solid #a8a8a8;
+				top:38%;
+				left:-11%;
+			}		
+		}
+		li.index{
+			&:after{
+				content: "";
+				display:block;
+				position:absolute;
+				top:3%;
+				left:1.5%;
+				width:1.1rem;
+				height:1.1rem;
+				background:url("../images/icc_07.png");
+				background-size: 100% 100%;
+			}
+		}
+		li._active{
+			&:before{
+				border:2px solid transparent;
+				background:url("../images/dty_03.png") no-repeat center;
+				background-size: 100% 100%;
+			}
+		}
+	}
+	button:focus{
+		outline: none;
+	}
+	>._submit{
+		display:block;
+		margin:0 auto;
+		width:90%;
+		background: #3c64c8;
+		font-size:1.8rem;
+		padding:3% 0;
+		color:#fff;
+		border:none;
+		border-radius: 5px;
+		box-shadow: 0 0 3px #3c64c8;
+		-webkit-box-shadow: 0 0 3px #3c64c8;
+		margin-bottom: 7%;
+	}
+}

@@ -1,0 +1,140 @@
+.g_center {
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.g_box_center {
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  display: box;
+  box-pack: center;
+  box-align: center;
+}
+.g_table_center {
+  display: table-cell;
+  vertical-align: middle;
+}
+.g_clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.g_left {
+  float: left;
+}
+.g_right {
+  float: right;
+}
+.g_box {
+  display: -webkit-box;
+  display: box;
+}
+.g_flex {
+  display: -webkit-flex;
+  display: flex;
+}
+.xs {
+  font-size: 14px;
+}
+[data-dpr="2"] .xs {
+  font-size: 28px;
+}
+[data-dpr="3"] .xs {
+  font-size: 42px;
+}
+.sm {
+  font-size: 16px;
+}
+[data-dpr="2"] .sm {
+  font-size: 32px;
+}
+[data-dpr="3"] .sm {
+  font-size: 48px;
+}
+.md {
+  font-size: 20px;
+}
+[data-dpr="2"] .md {
+  font-size: 40px;
+}
+[data-dpr="3"] .md {
+  font-size: 60px;
+}
+.lg {
+  font-size: 22px;
+}
+[data-dpr="2"] .lg {
+  font-size: 44px;
+}
+[data-dpr="3"] .lg {
+  font-size: 66px;
+}
+.llg {
+  font-size: 40px;
+}
+[data-dpr="2"] .llg {
+  font-size: 80px;
+}
+[data-dpr="3"] .llg {
+  font-size: 120px;
+}
+.f-500 {
+  font-weight: bold;
+}
+html {
+  height: 100%;
+  background: #f4f4f4;
+}
+.setting._con {
+  color: #7d7d7d;
+}
+.setting._con ._title {
+  width: 100%;
+  text-align: center;
+  color: #3c64c8;
+  margin-bottom: .8rem;
+}
+.setting._con .list_wrap {
+  background: #fff;
+  font-size: 0;
+  box-shadow: 0 2px 5px #cccccc;
+  -webkit-box-shadow: 0 2px 5px #cccccc;
+}
+.setting._con .list_wrap ._list,
+.setting._con .list_wrap ._link {
+  position: relative;
+  padding: 0 .4rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  border-bottom: 1px solid #dfdfdf;
+}
+.setting._con .list_wrap ._list .city_name,
+.setting._con .list_wrap ._link .city_name {
+  float: right;
+  margin-top: 1px;
+}
+.setting._con .list_wrap ._list .lag img,
+.setting._con .list_wrap ._link .lag img {
+  display: inline-block;
+  width: auto;
+  height: 1.3em;
+  vertical-align: middle;
+}
+.setting._con .list_wrap ._list:last-child {
+  border-bottom: none;
+}
+.setting._con .logout {
+  display: block;
+  width: 9.6rem;
+  margin: 3.2rem auto 0.3rem;
+  padding: 0.34rem 0;
+  border-radius: 3px;
+  box-shadow: 0 0 5px #cccccc;
+  -webkit-box-shadow: 0 0 5px #cccccc;
+  background: #3c64c8;
+  color: #fff;
+}

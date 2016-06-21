@@ -1,0 +1,242 @@
+.g_center {
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.g_box_center {
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  display: box;
+  box-pack: center;
+  box-align: center;
+}
+.g_table_center {
+  display: table-cell;
+  vertical-align: middle;
+}
+.g_clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.g_left {
+  float: left;
+}
+.g_right {
+  float: right;
+}
+.g_box {
+  display: -webkit-box;
+  display: box;
+}
+.g_flex {
+  display: -webkit-flex;
+  display: flex;
+}
+.xs {
+  font-size: 14px;
+}
+[data-dpr="2"] .xs {
+  font-size: 28px;
+}
+[data-dpr="3"] .xs {
+  font-size: 42px;
+}
+.sm {
+  font-size: 16px;
+}
+[data-dpr="2"] .sm {
+  font-size: 32px;
+}
+[data-dpr="3"] .sm {
+  font-size: 48px;
+}
+.md {
+  font-size: 20px;
+}
+[data-dpr="2"] .md {
+  font-size: 40px;
+}
+[data-dpr="3"] .md {
+  font-size: 60px;
+}
+.lg {
+  font-size: 22px;
+}
+[data-dpr="2"] .lg {
+  font-size: 44px;
+}
+[data-dpr="3"] .lg {
+  font-size: 66px;
+}
+.llg {
+  font-size: 40px;
+}
+[data-dpr="2"] .llg {
+  font-size: 80px;
+}
+[data-dpr="3"] .llg {
+  font-size: 120px;
+}
+.f-500 {
+  font-weight: bold;
+}
+._header {
+  padding: 3% 0 0;
+}
+._header h2.title {
+  font-size: 1.8rem;
+  text-align: center;
+  width: 100%;
+}
+._header .header_con {
+  margin-top: 8%;
+  display: -webkit-flex;
+  display: flex;
+}
+._header .header_con .mer,
+._header .header_con .per {
+  width: 100%;
+  text-align: center;
+}
+._header .header_con .mer a,
+._header .header_con .per a {
+  display: inline-block;
+  color: #9eb2e4;
+  font-size: 1.4rem;
+  padding: 0 3% 6%;
+}
+._header .header_con .mer a._border,
+._header .header_con .per a._border {
+  border-bottom: 0.3rem solid #fff;
+  color: #fff;
+}
+._con {
+  width: 100%;
+  background: #f4f4f4;
+}
+._con > .tag_nav {
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #d0d0d0;
+}
+._con > .tag_nav li {
+  width: 100%;
+  color: #5f5f5f;
+  font-size: 1.4rem;
+  text-align: center;
+  background: url("../images/cm2_03.png") no-repeat 90% center;
+  background-size: auto 20%;
+  padding: 4% 0;
+  position: relative;
+}
+._con > .tag_nav li:first-child {
+  border-right: 1px solid #d0d0d0;
+}
+._con > .list_wrap ._list {
+  position: relative;
+  background: #fff;
+  margin-top: 4%;
+  padding: 2% 5% 2% 2%;
+  display: -webkit-flex;
+  display: flex;
+  border-bottom: 1px solid #d0d0d0;
+}
+._con > .list_wrap ._list > .g_left {
+  padding-right: 4%;
+  width: 35%;
+  border-right: 1px solid #d0d0d0;
+}
+._con > .list_wrap ._list > .g_left > ._index {
+  font-size: 1.2rem;
+  display: inline-block;
+  border: 1px solid #d0d0d0;
+  color: #373737;
+  border-radius: 100px;
+  padding: 1% 12%;
+  margin-top: 1%;
+}
+._con > .list_wrap ._list > .g_left > ._num {
+  text-align: right;
+  margin: 2% 0;
+  color: #7d7d7d;
+}
+._con > .list_wrap ._list > .g_left > ._num ._parse {
+  color: #3c64c8;
+  font-size: 2.6rem;
+}
+._con > .list_wrap ._list > .g_left > ._num ._point {
+  color: #3c64c8;
+  font-size: 1.2rem;
+}
+._con > .list_wrap ._list > .g_left > ._num ._icon {
+  color: #7d7d7d;
+  font-size: 1.4rem;
+}
+._con > .list_wrap ._list > .g_right {
+  width: 60%;
+  padding-left: 4%;
+  font-size: 1.4rem;
+  color: #343434;
+  line-height: 2;
+}
+._con > .list_wrap ._list > .g_right ._mer {
+  color: #7d7d7d;
+  font-size: 1.2rem;
+}
+._con > .list_wrap ._list > .g_right ._tel ._phone {
+  line-height: 1;
+  display: inline-block;
+  width: 100%;
+}
+._con > .list_wrap ._list > .g_right ._tel ._ic {
+  float: right;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: url("../images/ic_03.png");
+  background-size: 100% 100%;
+}
+._con ._list._top3:nth-child(1) ._index {
+  opacity: 0;
+}
+._con ._list._top3:nth-child(1):before {
+  content: "";
+  position: absolute;
+  top: -0.5rem;
+  left: 2.5%;
+  width: 2.5rem;
+  height: 3.2rem;
+  background: url("../images/ret_03.png");
+  background-size: 100% 100%;
+}
+._con ._list._top3:nth-child(2) ._index {
+  opacity: 0;
+}
+._con ._list._top3:nth-child(2):before {
+  content: "";
+  position: absolute;
+  top: -0.5rem;
+  left: 2.5%;
+  width: 2.5rem;
+  height: 3.2rem;
+  background: url("../images/ret_06.png");
+  background-size: 100% 100%;
+}
+._con ._list._top3:nth-child(3) ._index {
+  opacity: 0;
+}
+._con ._list._top3:nth-child(3):before {
+  content: "";
+  position: absolute;
+  top: -0.5rem;
+  left: 2.5%;
+  width: 2.5rem;
+  height: 3.2rem;
+  background: url("../images/ret_08.png");
+  background-size: 100% 100%;
+}

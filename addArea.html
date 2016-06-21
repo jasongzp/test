@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>所在地区</title>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta http-equiv="Expires" CONTENT="0">
+		<meta http-equiv="Cache-Control" CONTENT="no-cache">
+		<meta http-equiv="Pragma" CONTENT="no-cache">
+		<link rel="stylesheet" type="text/css" href="css/resets.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/addArea.css" />
+		<script type="text/javascript" src="./js/flexible.js"></script>
+		<script type="text/javascript" data-main="js/addArea" src="./js/vendor/require.js"></script>
+	</head>
+	<body>
+		<!--标题部分-->
+		<header class="_header _fixed lg">
+			<h2 class="title">
+				<a class="_back" href="javascript:void(0)" lm-back></a>
+				选择地区
+			</h2>
+		</header>
+
+		<!--内容部分-->
+		<section class="add-area _con mgn lm-js-addArea sm">
+			<section class="city_group" lm-repeat="areaList" lm-repeat-tpl="areaList" lm-repeat-target="areaScript">
+				
+			</section>
+		</section>
+		<!--末尾部分-->
+	</body>
+</html>

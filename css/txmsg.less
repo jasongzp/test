@@ -1,0 +1,136 @@
+@import "reset.less";
+html{
+	width:100%;
+	background:#f4f4f4;
+}
+//header部分
+//footer部分
+//fixed部分
+//con部分
+.txmsg._con{
+	color:@color_black;
+	.mer_contacts{
+		background:#fff;
+		border-bottom: 1px solid #e5e5e5;
+		color:@color_gray;
+		li{
+			padding:0.3rem;
+			position:relative;
+			border-bottom: 1px solid #e5e5e5;
+			p._addr{
+				color:@color_black;
+				padding-top:0.3rem;
+				padding-bottom:0.4rem;
+			}
+			span._gray,span._addr{
+				color:@color_gray;
+			}
+		}
+		._title{
+			position:relative;
+			color:@color_black;
+			padding:0.746rem 0.3rem;
+			margin-bottom:0.35rem;
+			._border{
+				height:1px;
+				width:94%;
+				position:absolute;
+				bottom:0;
+				left:3%;
+				background:#ccc;
+			}
+			.g_right{
+				color:@stylecolor;
+			}
+		}
+		span.g_right{
+			color:@color_black;
+			._tel{
+				vertical-align: middle;
+				padding-left: 0.2rem;
+				img{
+					height:1.1em;
+					width:1.1em;
+				}
+			}
+		}
+	}
+
+	.apply_date{
+		padding:0.2rem 0.3rem 0.4rem;
+		line-height: 2;
+		position:relative;
+		color:@color_gray;
+		.apply_com{
+			color:@stylecolor;
+		}
+		._state{
+			position:absolute;
+			top:0.2rem;
+			right:0.4rem;
+			height:0.65rem;
+			line-height:.65rem;
+			padding:0 .2rem;
+			background:#ee453b;
+			color:#fff;
+			border-radius: 100rem;
+		}
+		._state1{
+			background:#ee453b;
+		}
+		.img_bottom{
+			width:90%;
+			height:20rem;
+			display:block;
+			margin:5% auto;
+			background:@stylecolor;
+		}
+	}
+	._submit{
+		display: block;
+		width: 9rem;
+		border: none;
+		margin: .5rem auto;
+		line-height: 1.3rem;
+		height:1.3rem;
+		border-radius: 3px;
+		box-shadow: 0 0 5px #ccc;
+		color: #fff;
+		background: @stylecolor;
+	}
+	#_subfile{
+		position:absolute;
+		bottom:0;
+		right:5%;
+		width:90%;
+		display:inline-block;
+		opacity: 0;
+	}
+	label{
+		text-align: center;
+	}
+	.img_group{
+		display:none;
+		position:relative;
+		padding-top:8%;
+		img{
+			width:95%;
+			background:#abcdef;
+			display:block;
+			margin: auto;
+		}
+		._state{
+			position:absolute;
+			font-size: 1.4rem;
+			top:0;
+			right:4%;
+			line-height: 1;
+			padding: 1% 2%;
+    		display: inline-block;
+   			border-radius: 3px;
+    		line-height: 1;
+    		color: @stylecolor;
+    		border: 1px solid @stylecolor;
+		}
+	}
+}

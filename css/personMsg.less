@@ -1,0 +1,58 @@
+@import "reset.less";
+//header部分
+._header{
+	padding:3% 0 3%;
+	position:fixed;
+	width:100%;
+	top:0;
+	z-index:11;
+	h2.title{
+		font-size:1.6rem;
+		text-align: center;
+		width:100%;
+	}
+}
+//footer部分
+//fixed部分
+//con部分
+._con{
+	margin-top:22%;
+	color:#7d7d7d;
+	font-size:1.4rem;
+	line-height: 1;
+	input,textarea,input:focus,button:focus{
+		border:none;
+		outline: none;
+		font-size:1.4rem;
+	}
+	>._title{
+		width:100%;
+		text-align: center;
+		font-size:1.6rem;
+		color:#3c64c8;
+		margin-bottom:8%;
+		>.login_tx{
+			display:inline-block;
+			width:30%;
+			margin-top: 5%;
+			margin-bottom:8%;
+		}
+		>.login_name{
+		}
+	}
+	>.per_msg,>.per_area{
+		padding:2% 4% 0;
+		font-size:1.4rem;
+		li{
+			padding:2% 0%;
+		}
+		
+		.g_right{
+			color:#373737;
+		}
+	}
+	>.per_msg li:last-child{
+		padding-bottom: 4%;
+		border-bottom:1px solid #ccc;
+	}
+}

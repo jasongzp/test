@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>地推员详情</title>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="css/resets.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/perMsg.css" />
+		<script type="text/javascript" src="./js/flexible.js"></script>
+		<script type="text/javascript" data-main="js/perMsg.js" src="./js/vendor/require.js"></script>
+	</head>
+	<body>
+		<!--标题部分-->
+		<header class="_header lg">
+			<h2 class="title">
+				<a class="_back" href="JavaScript:history.go(-1)"></a>
+				<span>地推员详情</span>
+				<a class="_more"></a>
+			</h2>
+		</header>
+
+		<!--内容部分-->
+		<section class="_con perMsg">
+			<section class="mer_msg">
+				<h2 class="mer_name">
+					<span class="name_cn llg" lm-bind="bd.name_cn">
+						
+					</span>
+					<p class="name_en md" lm-bind="bd.name_en">
+						
+					</p>
+				</h2>
+				<section class="type_date sm">
+					上线时间<span class="_date" lm-bind="bd.online_time"></span>
+				</section>
+				<span class="_state md" lm-bind="bd.status">
+					
+				</span>
+			</section>
+			<section class="msg_num">
+				<section class="_num1">
+					<span class="md">累计返佣</span>
+					<p class="_CNY">
+						<span class="_parse llg" lm-bind="bd.JSparseInt"></span>
+						<span class="_point sm" lm-bind="bd.JSpoint"></span>
+						<span class="_icon sm">CNY</span>
+					</p>
+				</section>
+				<section class="_num2">
+					<span class="md">累计销量</span>
+					<p class="_CNY md">
+						共
+						<span class="_parse llg" lm-bind="bd.total_num"></span>
+						条
+					</p>
+				</section>
+			</section>
+			<ul class="mer_contacts mer_list sm">
+				<li class="contact_tel">
+					<span class="_text">联系电话</span>
+					<span class="g_right"><span class="phone_num" lm-bind="bd.mobile"></span><a href="tel:137 1234 1234" class="_tel" ></a></span>
+				</li>
+			</ul>
+			<ul class="area_add mer_list sm">
+				<li class="_area _link" href="#" lm-click="jumpShop">
+					<span class="_gray">所属商户</span>
+					<span class="g_right">
+						<span class="_text" lm-bind="bd.pername"></span>
+					</span>
+				</li>
+			</ul>
+			<ul class="per_card mer_list sm">
+				<li>
+					二维码名片
+					<span class="ewm_card" lm-bind="bd.qrcode_id">
+						
+					</span>
+				</li>
+			</ul>
+		</section>
+		<!--末尾部分-->
+		<!--fixed部分-->
+		<section  class="_fixed perMsg">
+			<section class="add_list">
+				<a class="sm" href="javascript:void(0);" id="editBd" lm-click="jumpEidt">修改地推员信息</a>
+				<a class="sm" href="javascript:void(0);" id="outLineBd">下线该地推员</a>
+			</section>
+		</section>
+	</body>
+</html>

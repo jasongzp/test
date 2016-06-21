@@ -2,72 +2,52 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>地推</title>
+		<title>首页</title>
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<link rel="stylesheet" type="text/css" href="css/resets.css" />
 		<link rel="stylesheet" type="text/css" href="css/public.css" />
-		<link rel="stylesheet" type="text/css" href="css/shop.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
 		<script type="text/javascript" src="./js/flexible.js"></script>
-		<script type="text/javascript" data-main="js/shop" src="./js/vendor/require.js"></script>
+		<script type="text/javascript" data-main="js/index.js" src="./js/vendor/require.js"></script>
 	</head>
 	<body>
 		<!--标题部分-->
-		<header class="_header shop lg">
-			<h2 class="title">
-				<a class="_back" href="index.html" ></a>
-				地推
-				<a class="_more" lm-click="add(e)" lm-target="._fixed" style="background-image:url('images/more_03.png')"></a>
+		<header class="index _header">
+			<h2 class="title lg">
+				首页
 			</h2>
-			<section class="header_con md">
-				<section class="mer">
-					<a javascript:void(0); class="_border">商户</a>
-				</section>
-				<section class="per">
-					<a href="persearch.html" class="">地推员</a>
-				</section>
+			<section class="hearder_con">
+				<a class="add_mer" href="addShop.html">
+					<img class="g_center" src="images/index_03.png">
+					<span class="md">添加商户</span>
+				</a>
+				<a class="add_per js-data-clear" href="javascript:void(0)">
+					<img class="g_center" src="images/index_05.png">
+					<span class="md">添加地推员</span>
+				</a>
 			</section>
 		</header>
 
 		<!--内容部分-->
-		<section class="_con shop sm" lm-show="!self.noShop">
-			<ul class="tag_nav">
-				<li class="_index _all" lm-click="tap(e)">全部</li>
-				<li class="_tobe" lm-click="tap(e,0)">草稿</li>
-				<li class="_online" lm-click="tap(e,2)">已上线</li>
-				<li class="_downline" lm-click="tap(e,1)">已下线</li>
-			</ul>
-			<section class="list_con">
-				<section class="search_wrap xs">
-					<form action="" method="" onsubmit="return false">
-						<input class="sm" id="_search" type="search" placeholder="请输入要查找的商户名称" lm-focus="searchFoucs(e)" lm-target=".closeText" lm-input="searchInput(e)" lm-keydown="searchEnter(e)"></input>
-						<label lm-click="search(e,'#_search')"></label>
-						<section class="closeImg" lm-click="close(e)" lm-target="#_search"><img src="images/s_03.png"></section>
-						<span class="closeText" lm-click="canel(e,'#_search','.closeImg')">取消</span>
-					</form>
-				</section>
-
-				<section class="list_wrap md" lm-repeat="shopList" lm-repeat-tpl="shopList" lm-repeat-target="scriptContainer">
-				</section>
-			</section>
+		<section class="_con index">
+			<a href="msg.html" class="_title md">
+				<span>消息通知</span>
+				<img class="_more" src="images/adds_03.png" />
+			</a>
+			<section class="_bar"></section>
+			<div class="message_con" lm-repeat="msgList" lm-repeat-tpl="msgList" lm-repeat-target="scriptContainer">
+			</div>
+			<p class="_message llg js-message">暂无消息通知</p>
 		</section>
 		<!--末尾部分-->
-		<!-- 无商户 -->
-		
-		<section class="_con shop lg" lm-show="self.noShop">
-			<section class="_none">
-				暂无商户
-			</section>
-			<section class="a_wrap">
-				<a class="add_mer" href="addShop.html">
-					添加商户
-				</a>
-			</section>
-		</section>
-		
-
 		<!--fixed部分-->
+		<section class="_fixed index md">
+			<a class="_index" href="javascript:void(0);">首页</a>
+			<a class="_ret" href="javascript:void(0);">返佣</a>
+			<a class="_dt" href="persearch.html">地推</a>
+			<a class="_more" href="setting.html">更多</a>
+		</section>
+		<script type="text/html" id="scriptContainer"></script>
 	</body>
-	<script type="text/html" id="scriptContainer"></script>
-
 </html>

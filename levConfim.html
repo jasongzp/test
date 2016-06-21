@@ -1,0 +1,117 @@
+ <!-- 弹出框 临时代码位置 开始-->
+
+<style type="text/css">
+	.lev-confim-warp{
+		width: 100%;
+		height: 100vh;
+		background: rgba(0,0,0,0.5);
+		position: fixed;
+		z-index: 9999;
+		/*display: none;*/
+	}
+	.lev-confim-dialog{
+	    width: 70%;
+	    background: #fff;
+	    margin: 0 auto;
+	    margin-top: 45%;
+	    border-radius: 3px;
+	    border: solid 1px #e1e1e1;
+	    -webkit-box-shadow:0 0 15px rgba(0, 0, 0, .5);  
+		-moz-box-shadow:0 0 15px rgba(0, 0, 0, .5);  
+		box-shadow:0 0 15px rgba(0, 0, 0, .5);  
+	}
+	.lev-modal-title{
+	    color: #333;
+	    font-size: 1.7em;
+	    text-align: center;
+	    padding: 1em 0 0 0;
+	    font-weight: bold;
+	}
+	.lev-modal-describe{
+	    font-size: 1.5em;
+	    color: #333;
+	    text-align: center;
+	    padding: 1em 0;
+	    line-height: 1.5em;
+	}
+	.lev-modal-footer{
+		border-top: solid 1px #e1e1e1;
+	}
+	.lev-modal-btn{
+	    font-size: 1.5em;
+	    color: #3398ff;
+	    width: 50%;
+	    display: block;
+	    text-align: center;
+	    float: left;
+	    padding: 0.8em 0;
+	    width: 49.5%;
+	}
+	.lev-data-cancel{
+		border-right: solid 1px #e1e1e1;
+	}
+
+</style>
+
+<div class="lev-confim-warp">
+
+  <div class="lev-confim-dialog">
+    <div class="lev-modal-title">提示</div>
+    <div class="lev-modal-describe">
+    	你是猴子请来的逗比吗？
+    </div>
+    <div class="lev-modal-footer">
+      <span class="lev-modal-btn lev-data-cancel" id="lev-data-cancel">取消</span>
+      <span class="lev-modal-btn lev-data-confim" id="lev-data-confim">确定</span>
+      <div style="clear: both"></div>
+    </div>
+  </div>
+</div>
+
+<script src="./js/jquery-2.1.0.js"></script>
+<script type="text/javascript">
+
+	$(function(){
+		
+		//如果title为空 则隐藏其元素
+		if ($(".lev-modal-title").text()=="") {
+			$(".lev-modal-title").hide();
+		};
+	})
+
+	function showLevConfimDialog(title,describe){
+
+		// $(".lev-confim-warp").show();
+		if (title) {
+			$(".lev-modal-title").text(title)
+		};
+		if (describe) {
+			$(".lev-modal-describe").text(describe)
+		};
+		$(".lev-modal-btn").click(function(){
+			$(".lev-confim-warp").fadeOut();
+		})
+		return $(".lev-modal-btn");
+	}
+
+
+	// 外部使用   confim的调用 仅仅修改此处
+	var confimBtnsObj = showLevConfimDialog('提示测试','描述测试描述测试描述')
+
+	if (confimBtnsObj) {
+		confimBtnsObj.click(function(event) {
+			/* Act on the event */
+			var btnIndexValue = $(this).attr('id');
+			if (btnIndexValue =="lev-data-cancel") {
+				alert("点击了取消");
+			};
+			if (btnIndexValue =="lev-data-confim") {
+				alert("点击了确定");
+
+			};
+		});
+	};
+
+</script>
+
+ <!-- 弹出框 临时代码位置 结束-->

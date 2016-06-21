@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>消息处理记录</title>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="css/resets.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/ff.css" />
+		<script type="text/javascript" src="./js/flexible.js"></script>
+		<script type="text/javascript" data-main="js/wmsg" src="./js/vendor/require.js"></script>
+	</head>
+	<body>
+		<!--标题部分-->
+		<header class="_header lg">
+			<h2 class="title">
+				<a class="_back" href="msg.html"></a>
+				消息处理记录
+			</h2>
+			<section class="header_con md">
+				<section class="mer">
+					<a href="withdraw.html" class="">提现记录</a>
+				</section>
+				<section class="per">
+					<a class="_border">物料发放记录</a>
+				</section>
+			</section>
+		</header>
+
+		<!--内容部分-->
+		<section class="_con">
+			<section class="msg_title md">
+				<p class="tx_note">
+					共计 <span class="_times" lm-bind="wlList.length">0</span> 条提现记录
+				</p>
+			</section>
+			<section class="list_con">
+				<section class="per_list" lm-repeat="wlList" lm-repeat-tpl="wlList" lm-repeat-target="scriptContainer">
+				</section>
+			</section>
+		</section>
+		<!--末尾部分-->
+		<!--fixed部分-->
+		<script type="text/html" id="scriptContainer"></script>
+	</body>
+</html>

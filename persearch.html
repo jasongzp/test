@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>地推</title>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="css/resets.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/persearch.css" />
+		<script type="text/javascript" src="./js/flexible.js"></script>
+		<script type="text/javascript" data-main="js/persearch.js" src="./js/vendor/require.js"></script>
+	</head>
+	<body>
+		<!--标题部分-->
+		<header class="_header persearch lg">
+			<h2 class="title">
+				<a class="_back" href="index.html"></a>
+				地推
+				<a href="javascript:void(0)" data-clear-session class="_more" style="background-image:url('images/more_03.png');" ></a>
+			</h2>
+			<section class="header_con md">
+				<section class="mer">
+					<a href="shop.html" class="" href='javascript:void(0);'>商户</a>
+				</section>
+				<section class="per">
+					<a href="javascript:void(0);" class="_border" >地推员</a>
+				</section>
+			</section>
+		</header>
+
+		<!--内容部分-->
+		<section class="_con persearch">
+			<ul class="tag_nav md">
+				<li class="_index _all">全部</li>
+				<li class="_online">已上线</li>
+				<li class="_downline">已下线</li>
+			</ul>
+			<section class="list_con">
+				<section class="search_wrap xs">
+					<form action="" method="">
+						<input class="sm" id="_search" type="search" placeholder="请输入要查找的地推员姓名"></input>
+						<label></label>
+						<section class="closeImg"><img src="images/s_03.png"></section>
+						<span class="closeText">取消</span>
+					</form>
+				</section>
+				<ul class="per_list" lm-repeat="bdList2" lm-repeat-tpl="bdList2" lm-repeat-target="bdScript">
+			
+				</ul>
+				<section class="no_con shop">
+					<section class="_none lg" style="display:none">
+						暂无地推员
+					</section>
+					<section class="a_wrap lg">
+						<a class="add_mer" href="noqrcode.html" style="display:none">
+							<span class="_ic"></span>添加地推员
+						</a>
+					</section>
+				</section>
+			</section>
+		</section>
+		<!--末尾部分-->
+		<!--fixed部分-->
+	</body>
+</html>

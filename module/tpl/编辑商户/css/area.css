@@ -1,0 +1,74 @@
+html {
+  font-size: 16px;
+}
+html,
+body,
+ul,
+ol,
+li {
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a,
+a:hover,
+:focus {
+  text-decoration: none;
+  color: #7D7D7D;
+  color: inherit;
+  display: inline-block;
+}
+.lm-hide {
+  display: none!important;
+}
+.lm-show {
+  display: block!important;
+}
+.area,
+.area-container {
+  color: #7d7d7d;
+  font-size: 1rem;
+  line-height: 1;
+}
+.area .lmui-group {
+  background: #fff;
+  box-shadow: 0 2px 5px #ccc;
+  -webkit-box-shadow: 0 2px 5px #ccc;
+}
+.area .lmui-group ._link {
+  display: block;
+  font-size: 0.9625rem;
+  position: relative;
+  padding: 0.9375rem 0 0.9375rem 1.171875rem;
+  border-bottom: 1px solid #dfdfdf;
+}
+.area .lmui-group .g_right {
+  background: url("../imgs/adds_03.png") no-repeat right center;
+  background-size: contain;
+  color: #373737;
+  float: right;
+  display: inline-block;
+  padding-right: 1.71875rem;
+  margin-right: 0.625rem;
+}
+.area-container .lmui-group {
+  width: 100%;
+  box-shadow: 0 0 10px #ccc;
+  -webkit-box-shadow: 0 0 10px #ccc;
+  background: #fff;
+}
+.area-container .lmui-group .lmui-list {
+  display: block;
+  font-size: 1.03125rem;
+  padding: 1.0546875rem 0.9375rem;
+  border-bottom: 1px solid #dfdfdf;
+  color: #5f5f5f;
+}

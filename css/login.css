@@ -1,0 +1,332 @@
+/*
+ * 语言设置
+ */
+
+body {
+	background: url(../images/bg_black.png) repeat 0 0;
+}
+
+.bg_img {
+	background: url(../images/bg_black.png) repeat 0 0;
+}
+.panda_top_language {
+	height: 60px;
+	width: 100%;
+	padding: 0px 0px;
+	margin: 0px 0px;
+	vertical-align: bottom;
+}
+
+.none {
+	display: none !important;
+}
+
+.panda_top_text {
+	font-size: 14px;
+	color: #5f5f5f;
+	float: right;
+	position: relative;
+	bottom: -30px;
+	right: 14px;
+}
+
+.panda_top_img {
+	float: right;
+	height: 20px;
+	width: 30px;
+	position: relative;
+	bottom: -30px;
+	right: 12px;
+}
+
+.panda_top_icon {
+	float: right;
+	position: relative;
+	bottom: -33px;
+	right: 0px;
+}
+
+.panda_top_icon_content {
+	background-image: url(../images/button_rolldown_28x28px.png);
+	height: 14px;
+	width: 14px;
+	background-size: 100% 100%;
+	display: block;
+}
+
+.panda_top_icon_content.active {
+	background-image: url(../images/button_rollup_28x28px.png);
+	height: 14px;
+	width: 14px;
+	background-size: 100% 100%;
+	display: block;
+}
+
+.icon_language_chinese {
+	height: 20px;
+	width: 40px;
+}
+
+
+/*
+ * 语言内容
+ */
+
+.panda_top_language_content {
+	position: fixed;
+	top: 65px;
+	right: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.40);
+	z-index: 500;
+}
+
+.lang li.lang-cell {
+	padding: 5px 15px;
+	background-color: #fff;
+    border-bottom: 1px solid #E4E1E1;
+}
+
+.lang .fullheight {
+	height: 42px;
+	line-height: 42px;
+	margin-left: 45px;
+}
+
+.lang .sarmat {
+	height: 20px;
+	width: 30px;
+	margin-top: 10px;
+}
+.lang-cell a{
+	color: #191919;
+}
+
+
+/*
+ * 登录
+ */
+
+.panda_content_loginfrom {
+	width: 100%;
+}
+
+.panda_content_loginicon {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.pic_panda_logicon {
+	/*width: 100px;*/
+	height: 121px;
+	padding-top: 25px;
+}
+
+.panda_content_input {
+	width: 88%;
+	margin-left: 6%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 5px;
+}
+
+.panda_content_input input{
+	border: none;
+}
+
+.panda_content_loginname {
+	padding: 0px 0px;
+	margin: 0px 0px;
+	width: 100%;
+	height: 40px;
+	color: #5F5F5F;
+	position: relative;
+}
+.ipt_div_pass_icon.on i{
+	background:url(../images/icon_login_password_show_44x44px.png);
+	height: 22px;
+	width: 22px;
+	background-size: 100% 100%;
+	display: block;
+	position: relative;
+	z-index: 200;
+}
+.ipt_loginname {
+	margin-bottom: 0px !important;
+	border-bottom: 1px solid #d0d0d0 !important;
+	border-bottom-left-radius: 0px !important;
+	border-bottom-right-radius: 0px !important;
+	background-color: #000;
+	text-indent: 15px;
+	background: #fff !important;
+	display: block;
+	height: 100%;
+	width: 100%;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.ipt_loginpassword {
+	margin-bottom: 0px !important;
+	border-top: 0px !important;
+	border-top-left-radius: 0px !important;
+	border-top-right-radius: 0px !important;
+	background-color: #000;
+	text-indent: 15px;
+	background: #fff !important;
+	float: left;
+	display: block;
+	height: 100%;
+	width: 100%;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.panda_content_password {
+	width: 100%;
+	height: 40px;
+	position: relative;
+}
+
+.panda_content_forgetpassword {
+	text-align: right;
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 5px;
+	float: left;
+	margin-top: 15px;
+}
+
+.forgetpassword {
+	font-size: 14px;
+	color: #ffffff;
+}
+
+.panda_content_ipt_errer {
+	padding-top: 5px;
+	padding-bottom: 15px;
+	text-align: left;
+	width: 100%;
+	float: left;
+}
+/*
+	账号密码错误样式
+*/
+.ipt_errer{
+	border: 1px solid #ee453b !important;
+	font-size: 17px;
+	/* color: #ee453b; */
+}
+/* 
+	错误信息提示
+ */
+.ipt_errer_note{
+	font-size: 14px;
+	color: #ee453b;
+}
+
+.panda_content_btn_login {
+	text-align: center;
+	width: 100%;
+	float: left;
+}
+
+.btn_login {
+	width: 100%;
+	height: 40px;
+	color: #4d90fe;
+	font-size: 20px;
+	background-color: #83b2fc;
+	border: none;
+}
+
+/*
+	登录按钮激活
+*/
+.btn_login.active {
+	width: 100%;
+	height: 40px;
+	color: #fff;
+	font-size: 20px;
+	background-color: #4d90fe;
+	border: none;
+}
+
+.btn_login:active {
+	color: #fff;
+	font-size: 20px;
+	background-color: #2c5698 !important;
+	border: none;
+}
+/*
+	登录按钮--登录中
+*/
+.btn_login.btn_logining{
+	background-color: #2E5698;
+    color: #4D90FE;
+}
+.btn_login .btn_content{
+	display: inline-block;
+	padding-left: 45px;
+	background: url(../images/loading_44x44px.gif) no-repeat 0 center;
+	background-size: 22px;
+}
+
+
+.ipt_loginname_icon {
+	background: url(../images/icon_login_username_44x44px.png) no-repeat center center;
+	width: 44px;
+	background-size: 50% 50%;
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0;
+	z-index: 100;
+}
+
+.ipt_loginpassword_icon {
+	background: url(../images/icon_login_password_44x44px.png) no-repeat center center;
+	width: 44px;
+	background-size: 50% 50%;
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0;
+	z-index: 100;
+}
+
+.ipt_loginpassword_icon_hide {
+	background-image: url(../images/icon_login_password_hide_44x44px.png);
+	height: 22px;
+	width: 22px;
+	background-size: 100% 100%;
+	display: block;
+}
+
+.ipt_div_pass_icon {
+	position: relative;
+	top: -30px;
+	right: 10px !important;
+	z-index: 200;
+	float: right;
+}
+
+.ipt_div_pass_icon i {
+	text-align: right;
+}
+
+.ipt_loginpassword_icon_hide.active {
+	background-image: url(../images/icon_login_password_hide_44x44px.png);
+	height: 22px;
+	width: 22px;
+	background-size: 100% 100%;
+	display: block;
+	position: relative;
+	top: -30px;
+	right: -91% !important;
+	z-index: 200;
+}

@@ -1,0 +1,226 @@
+.g_center {
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.g_box_center {
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  display: box;
+  box-pack: center;
+  box-align: center;
+}
+.g_table_center {
+  display: table-cell;
+  vertical-align: middle;
+}
+.g_clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.g_left {
+  float: left;
+}
+.g_right {
+  float: right;
+}
+.g_box {
+  display: -webkit-box;
+  display: box;
+}
+.g_flex {
+  display: -webkit-flex;
+  display: flex;
+}
+.xs {
+  font-size: 14px;
+}
+[data-dpr="2"] .xs {
+  font-size: 28px;
+}
+[data-dpr="3"] .xs {
+  font-size: 42px;
+}
+.sm {
+  font-size: 16px;
+}
+[data-dpr="2"] .sm {
+  font-size: 32px;
+}
+[data-dpr="3"] .sm {
+  font-size: 48px;
+}
+.md {
+  font-size: 20px;
+}
+[data-dpr="2"] .md {
+  font-size: 40px;
+}
+[data-dpr="3"] .md {
+  font-size: 60px;
+}
+.lg {
+  font-size: 22px;
+}
+[data-dpr="2"] .lg {
+  font-size: 44px;
+}
+[data-dpr="3"] .lg {
+  font-size: 66px;
+}
+.llg {
+  font-size: 40px;
+}
+[data-dpr="2"] .llg {
+  font-size: 80px;
+}
+[data-dpr="3"] .llg {
+  font-size: 120px;
+}
+.f-500 {
+  font-weight: bold;
+}
+._header {
+  padding: 3% 0 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+._header h2.title {
+  font-size: 1.8rem;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 2%;
+}
+._header .header_con {
+  display: -webkit-flex;
+  display: flex;
+  background: #fff;
+}
+._header .header_con > section {
+  width: 100%;
+  text-align: center;
+  padding: 4%;
+  border-right: 1px solid #f4f4f4;
+  color: #5f5f5f;
+  font-size: 1.6rem;
+}
+._header .header_con > section .g_right {
+  width: 1.2rem;
+  vertical-align: middle;
+  margin-top: 5%;
+}
+._header .header_con > section:last-child {
+  border: none;
+}
+._con {
+  width: 100%;
+}
+._con .list_con {
+  background: #f4f4f4;
+  padding: 3%;
+}
+._con .list_con section.search_wrap {
+  width: 100%;
+  position: relative;
+}
+._con .list_con section.search_wrap form {
+  width: 100%;
+}
+._con .list_con section.search_wrap #_search {
+  background: transparent;
+  padding: 1.5% 0 1.5% 9%;
+  width: 100%;
+  font-size: 1.3rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+}
+._con .list_con section.search_wrap label {
+  position: absolute;
+  top: 25%;
+  left: 2%;
+  width: 4%;
+}
+._con .list_con section.search_wrap .closeImg {
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  width: 5%;
+  display: none;
+}
+._con .list_con section.search_wrap .closeText {
+  position: absolute;
+  top: 15%;
+  right: 2%;
+  color: #7d7d7d;
+  font-size: 1.3rem;
+  display: none;
+}
+._con .list_con section.list_wrap {
+  margin-top: 4%;
+  color: #7d7d7d;
+}
+._con .list_con section.list_wrap a.mer,
+._con .list_con section.list_wrap a.qcode {
+  display: block;
+  background: #fff;
+  color: #373737;
+  padding: 4% 3% 4%;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #e5e5e5;
+  line-height: 1;
+}
+._con .list_con section.list_wrap a.mer ._border,
+._con .list_con section.list_wrap a.qcode ._border {
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 3em;
+  border: 2px solid #ccc;
+  margin-right: 2%;
+}
+._con .list_con section.list_wrap a.mer .state1,
+._con .list_con section.list_wrap a.qcode .state1 {
+  color: #3c64c8;
+}
+._con .list_con section.list_wrap a.mer .state2,
+._con .list_con section.list_wrap a.qcode .state2 {
+  color: #ee453b;
+}
+._con .list_con section.list_wrap a.mer .state3,
+._con .list_con section.list_wrap a.qcode .state3 {
+  color: #858585;
+}
+._con .list_con section.list_wrap a.mer ._state,
+._con .list_con section.list_wrap a.qcode ._state {
+  float: right;
+  padding: 1% 2% 1%;
+  font-size: 1.3rem;
+  background: #3c64c8;
+  color: #fff;
+  border-radius: 100rem;
+}
+._con .list_con a.fic_mer {
+  display: block;
+  color: #373737;
+  padding: 4% 3% 4%;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #e5e5e5;
+  background: url("../images/cm_03.png") no-repeat 3% center, #ffffff;
+  background-size: auto 40%;
+  padding-left: 11%;
+}
+._con .list_con a.add_mer {
+  display: block;
+  color: #373737;
+  padding: 4% 3% 4%;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #e5e5e5;
+  background: url("../images/cm_06.png") no-repeat 3% center, #ffffff;
+  background-size: auto 40%;
+  padding-left: 11%;
+}

@@ -1,0 +1,188 @@
+.g_center {
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.g_box_center {
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  display: box;
+  box-pack: center;
+  box-align: center;
+}
+.g_table_center {
+  display: table-cell;
+  vertical-align: middle;
+}
+.g_clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.g_left {
+  float: left;
+}
+.g_right {
+  float: right;
+}
+.g_box {
+  display: -webkit-box;
+  display: box;
+}
+.g_flex {
+  display: -webkit-flex;
+  display: flex;
+}
+.xs {
+  font-size: 14px;
+}
+[data-dpr="2"] .xs {
+  font-size: 28px;
+}
+[data-dpr="3"] .xs {
+  font-size: 42px;
+}
+.sm {
+  font-size: 16px;
+}
+[data-dpr="2"] .sm {
+  font-size: 32px;
+}
+[data-dpr="3"] .sm {
+  font-size: 48px;
+}
+.md {
+  font-size: 20px;
+}
+[data-dpr="2"] .md {
+  font-size: 40px;
+}
+[data-dpr="3"] .md {
+  font-size: 60px;
+}
+.lg {
+  font-size: 22px;
+}
+[data-dpr="2"] .lg {
+  font-size: 44px;
+}
+[data-dpr="3"] .lg {
+  font-size: 66px;
+}
+.llg {
+  font-size: 40px;
+}
+[data-dpr="2"] .llg {
+  font-size: 80px;
+}
+[data-dpr="3"] .llg {
+  font-size: 120px;
+}
+.f-500 {
+  font-weight: bold;
+}
+._header {
+  padding: 3% 0 3%;
+  width: 100%;
+}
+._header h2.title {
+  font-size: 1.6rem;
+  text-align: center;
+  width: 100%;
+}
+._con {
+  color: #373737;
+}
+._con > ._title {
+  font-size: 1.2rem;
+  padding-left: 14.6%;
+  margin: 5% 0;
+}
+._con > .per_list li.per {
+  position: relative;
+  padding: 4%;
+  border-radius: 3px;
+  width: 72%;
+  margin-left: 13%;
+  background: #fff;
+  margin-bottom: 4%;
+  box-shadow: 0 0 5px #c8c8c8;
+  -webkit-box-shadow: 0 0 5px #c8c8c8;
+}
+._con > .per_list li.per ._title {
+  font-size: 1.4rem;
+  padding-bottom: 4%;
+  margin-bottom: 4%;
+  border-bottom: 1px solid #d0d0d0;
+}
+._con > .per_list li.per ._title .state1 {
+  color: #ee453b;
+}
+._con > .per_list li.per ._title .state2 {
+  color: #3c64c8;
+}
+._con > .per_list li.per ._title .state3 {
+  color: #7d7d7d;
+}
+._con > .per_list li.per .per_msg .date {
+  color: #7d7d7d;
+  font-size: 1.2rem;
+  margin-bottom: 4%;
+}
+._con > .per_list li.per .per_msg .tel .phone {
+  font-size: 1.4rem;
+}
+._con > .per_list li.per .per_msg .tel .g_right {
+  vertical-align: middle;
+}
+._con > .per_list li.per .per_msg .tel .g_right img {
+  width: 1.5rem;
+}
+._con > .per_list li.per:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 2rem;
+  border: 2px solid #a8a8a8;
+  top: 38%;
+  left: -11%;
+}
+._con > .per_list li.index:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3%;
+  left: 1.5%;
+  width: 1.1rem;
+  height: 1.1rem;
+  background: url("../images/icc_07.png");
+  background-size: 100% 100%;
+}
+._con > .per_list li._active:before {
+  border: 2px solid transparent;
+  background: url("../images/dty_03.png") no-repeat center;
+  background-size: 100% 100%;
+}
+._con button:focus {
+  outline: none;
+}
+._con > ._submit {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  background: #3c64c8;
+  font-size: 1.8rem;
+  padding: 3% 0;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #3c64c8;
+  -webkit-box-shadow: 0 0 3px #3c64c8;
+  margin-bottom: 7%;
+}

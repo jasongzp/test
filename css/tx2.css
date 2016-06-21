@@ -1,0 +1,189 @@
+.g_center {
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.g_box_center {
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  display: box;
+  box-pack: center;
+  box-align: center;
+}
+.g_table_center {
+  display: table-cell;
+  vertical-align: middle;
+}
+.g_clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.g_left {
+  float: left;
+}
+.g_right {
+  float: right;
+}
+.g_box {
+  display: -webkit-box;
+  display: box;
+}
+.g_flex {
+  display: -webkit-flex;
+  display: flex;
+}
+.xs {
+  font-size: 14px;
+}
+[data-dpr="2"] .xs {
+  font-size: 28px;
+}
+[data-dpr="3"] .xs {
+  font-size: 42px;
+}
+.sm {
+  font-size: 16px;
+}
+[data-dpr="2"] .sm {
+  font-size: 32px;
+}
+[data-dpr="3"] .sm {
+  font-size: 48px;
+}
+.md {
+  font-size: 20px;
+}
+[data-dpr="2"] .md {
+  font-size: 40px;
+}
+[data-dpr="3"] .md {
+  font-size: 60px;
+}
+.lg {
+  font-size: 22px;
+}
+[data-dpr="2"] .lg {
+  font-size: 44px;
+}
+[data-dpr="3"] .lg {
+  font-size: 66px;
+}
+.llg {
+  font-size: 40px;
+}
+[data-dpr="2"] .llg {
+  font-size: 80px;
+}
+[data-dpr="3"] .llg {
+  font-size: 120px;
+}
+.f-500 {
+  font-weight: bold;
+}
+._header {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 3% 0 3%;
+  width: 100%;
+}
+._header h2.title {
+  font-size: 1.6rem;
+  text-align: center;
+  width: 100%;
+}
+._con {
+  color: #373737;
+}
+._con > ul.mer_contacts {
+  background: #fff;
+  font-size: 1.4rem;
+  margin-top: 3%;
+}
+._con > ul.mer_contacts li {
+  padding: 3%;
+  position: relative;
+  border-bottom: 1px solid #e5e5e5;
+}
+._con > ul.mer_contacts li p._addr {
+  color: #373737;
+  padding-top: 3%;
+  padding-bottom: 4%;
+}
+._con > ul.mer_contacts li span._gray,
+._con > ul.mer_contacts li span._addr {
+  color: #7d7d7d;
+}
+._con > ul.mer_contacts {
+  color: #7d7d7d;
+  margin-top: 0;
+}
+._con > ul.mer_contacts li {
+  border: none;
+}
+._con > ul.mer_contacts li._title {
+  position: relative;
+  font-size: 1.6rem;
+  color: #373737;
+  padding: 8% 3%;
+  margin-bottom: 4%;
+}
+._con > ul.mer_contacts li._title ._border {
+  height: 1px;
+  width: 94%;
+  position: absolute;
+  bottom: 0;
+  left: 3%;
+  background: #ccc;
+}
+._con > ul.mer_contacts li._title .g_right {
+  color: #3c64c8;
+  font-size: 1.8rem;
+  margin-top: 0.3rem;
+}
+._con > ul.mer_contacts li._title .g_right ._type {
+  font-size: 1.2rem;
+}
+._con > ul.mer_contacts span.g_right {
+  color: #373737;
+  line-height: 1;
+}
+._con > ul.mer_contacts span.g_right a._tel {
+  vertical-align: middle;
+  padding-left: 0.8rem;
+}
+._con > ul.mer_contacts span.g_right a._tel img {
+  height: 1.1em;
+  width: 1.1em;
+}
+._con > .apply_date {
+  padding: 2% 3% 4%;
+  line-height: 2;
+  position: relative;
+  font-size: 1.3rem;
+  color: #7d7d7d;
+}
+._con > .apply_date .apply_com {
+  color: #7d7d7d;
+}
+._con > .apply_date ._state {
+  position: absolute;
+  top: 1.2rem;
+  right: 4%;
+  line-height: 1;
+  padding: 1% 2.5% 1.5%;
+  background: #7d7d7d;
+  color: #fff;
+  border-radius: 100rem;
+}
+._con > .apply_date .img_bottom {
+  width: 90%;
+  height: 20rem;
+  display: block;
+  margin: 5% auto;
+  background: #3C64C8;
+}
